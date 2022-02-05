@@ -1,0 +1,36 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My portfolio'
+
+[Params]
+  description = "Corefinder's Portfolio!"
+  [Params.Terminal]
+  schema = "monokai"
+
+  userName = "corefinder89"
+  pcName = "macbook-pro"
+  workDir = "myworkdir"
+  profile = "profile.txt"
+
+  ps1Delay = 0 # prompt speed : [userName]@[pcName]:~/$ , [userName]@[pcName]:~/[workDir]$
+  stdoutDelay = 0 # stdout speed : [description] , files in Params.Tree
+  commandDelay = 50 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
+
+  titleDelay = 0 # title speed : "title" in front matter
+  contentDelay = 0 # content speed : content in .md file
+
+  description = """
+  Hi I am Soumyajit!
+  Great to see you here!
+  
+  """
+
+  [Params.Tree]
+  use = true
+  folderName = "my_activities"
+  files = [ 
+    ["Github", "https://github.com/Corefinder89"],
+    ["LinkedIn", "https://www.linkedin.com/in/soumyajit-basu-5a783886/"],
+    ["Dzone", "https://dzone.com/users/2997625/corefinder.html"],
+    ["Web code geeks", "https://www.webcodegeeks.com/user/soumyajit-basu/?profiletab=posts"]
+  ]
